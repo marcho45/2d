@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Petualangan Lintang</title>
+    
+    <!-- CSS untuk menata tampilan halaman dan canvas -->
+    <style>
+        /* Menghilangkan margin dan padding default browser */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #1a1a1a; /* Warna latar belakang halaman menjadi abu-abu gelap */
+            
+            /* Menggunakan Flexbox untuk menengahkan canvas */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Tinggi body setinggi layar */
+            font-family: sans-serif;
+        }
+
+        /* Memberi gaya pada canvas game */
+        canvas {
+            border: 3px solid white; /* Garis tepi putih di sekeliling canvas */
+            background-color: black; /* Latar belakang canvas hitam saat loading */
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Ini adalah "layar" tempat game kita akan digambar oleh JavaScript -->
+    <canvas id="gameCanvas"></canvas>
+
+    <!-- Memuat file JavaScript yang berisi semua logika game -->
+    <script src="game.js"></script>
+
+</body>
+</html>
